@@ -425,7 +425,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c62300009a370000362e0000
+    m_ExpandedInstanceIDs: c62300009a370000362e000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -512,9 +512,9 @@ MonoBehaviour:
     width: 398
     height: 521
   m_TreeViewState:
-    scrollPos: {x: 0, y: 1312}
-    m_SelectedIDs: 1c360000
-    m_LastClickedID: 13852
+    scrollPos: {x: 0, y: 1032}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
     m_ExpandedIDs: 1afcffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -595,13 +595,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.15894039, y: -0.83772594, z: 0.3304169, w: 0.4053305}
+    m_Target: {x: 0.05550001, y: -0.9213963, z: 0.3567754, w: 0.14551559}
     speed: 2
-    m_Value: {x: 0.15889947, y: -0.8375103, z: 0.33033183, w: 0.40522617}
+    m_Value: {x: 0.05548573, y: -0.9211592, z: 0.3566836, w: 0.14547814}
   m_Size:
-    m_Target: 72.82864
+    m_Target: 159.56895
     speed: 2
-    m_Value: 72.82864
+    m_Value: 159.56895
   m_Ortho:
     m_Target: 1
     speed: 2
