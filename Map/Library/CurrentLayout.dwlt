@@ -42,10 +42,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 683, y: 342}
-  m_MaxSize: {x: 12008, y: 8042}
+  m_MinSize: {x: 683, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 38
+  controlID: 110
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -64,8 +64,8 @@ MonoBehaviour:
     y: 0
     width: 555
     height: 947
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -115,14 +115,14 @@ MonoBehaviour:
     y: 558
     width: 1365
     height: 389
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 20}
+  m_MinSize: {x: 232, y: 271}
+  m_MaxSize: {x: 10002, y: 10021}
+  m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
   - {fileID: 20}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -207,10 +207,10 @@ MonoBehaviour:
     y: 0
     width: 1365
     height: 947
-  m_MinSize: {x: 406, y: 342}
-  m_MaxSize: {x: 8006, y: 8042}
+  m_MinSize: {x: 406, y: 492}
+  m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 39
+  controlID: 86
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 40
+  controlID: 87
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -377,7 +377,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 650
-    width: 1549
+    width: 1363
     height: 368
   m_SearchFilter:
     m_NameFilter: 
@@ -391,19 +391,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Dnk_Dev/HospitalHorrorPack/Textures
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Dnk_Dev/HospitalHorrorPack/Textures
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\GitHub\BOOSTED\Map
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 263b0000
-    m_LastClickedID: 15142
-    m_ExpandedIDs: 000000002e320000ac330000d4330000a43400004e350000f4360000f638000042390000bc390000c03a0000723c00001a3e0000ec3e000000ca9a3bffffff7f
+    m_SelectedIDs: 1a270000
+    m_LastClickedID: 10010
+    m_ExpandedIDs: 000000001a2700009a280000c428000096290000422a0000ea2b0000ec2d0000382e0000bc2e0000ce2f000088310000303300000434000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -431,7 +431,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002e320000ac330000d4330000a43400004e350000f436000062370000f638000042390000bc390000c03a0000723c00001a3e0000ec3e0000
+    m_ExpandedIDs: 000000001a2700009a280000c428000096290000422a0000ea2b0000ec2d0000382e0000bc2e0000ce2f0000883100003033000004340000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -456,9 +456,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 58e6ffff
-    m_LastClickedInstanceID: -6568
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300009a370000362e000000000000c62e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -547,9 +547,9 @@ MonoBehaviour:
     height: 537
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 34680000
-    m_LastClickedID: 26676
-    m_ExpandedIDs: 2694fcff9694fcff5496fcff58e6fffffcf7ffff000000002a400000da4400006e660000
+    m_SelectedIDs: d4060000
+    m_LastClickedID: 0
+    m_ExpandedIDs: c832feff7af1ffff1afcffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -604,9 +604,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -79.802734, y: 229.41406, z: -21.463623}
+    m_Target: {x: -33.34265, y: 252.59375, z: -0.46264648}
     speed: 2
-    m_Value: {x: -79.802734, y: 229.41406, z: -21.463623}
+    m_Value: {x: -33.34265, y: 252.59375, z: -0.46264648}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -629,13 +629,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.38566503, y: -0.6151353, z: 0.47388414, w: -0.49829572}
+    m_Target: {x: 0.39653623, y: 0.59469247, z: -0.41943532, w: 0.5596048}
     speed: 2
-    m_Value: {x: -0.38566625, y: -0.6151373, z: 0.47388563, w: -0.4982973}
+    m_Value: {x: 0.39653948, y: 0.5946973, z: -0.41943875, w: 0.5596094}
   m_Size:
-    m_Target: 21.769083
+    m_Target: 190.17006
     speed: 2
-    m_Value: 21.769083
+    m_Value: 190.17006
   m_Ortho:
     m_Target: 1
     speed: 2
