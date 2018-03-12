@@ -51,11 +51,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Characteranimator.cs" />
+     <Compile Include="Assets\equalscript.cs" />
+     <Compile Include="Assets\FlickeringLight.cs" />
      <Compile Include="Assets\Mainmenu.cs" />
      <Compile Include="Assets\MouseLock.cs" />
      <Compile Include="Assets\PlayerController.cs" />
      <Compile Include="Assets\PlayerMotor.cs" />
      <Compile Include="Assets\PlayerSetup.cs" />
+     <Compile Include="Assets\PlayerShoot.cs" />
+     <Compile Include="Assets\PlayerWeapon.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
