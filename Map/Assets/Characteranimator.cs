@@ -12,7 +12,7 @@ public class Characteranimator : MonoBehaviour{
 		agent = GetComponent<NavMeshAgent> ();
 		animator = GetComponentInChildren<Animator> ();
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		float SpeedPercent = agent.velocity.magnitude / agent.speed;

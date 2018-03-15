@@ -1,12 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PlayerSetup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Target.cs">
     <Files>
       <File FileName="Assets\Mainmenu.cs" Line="1" Column="1" />
       <File FileName="Assets\Characteranimator.cs" Line="1" Column="1" />
       <File FileName="Assets\FlickeringLight.cs" Line="1" Column="1" />
       <File FileName="Assets\equalscript.cs" Line="1" Column="1" />
-      <File FileName="Assets\PlayerSetup.cs" Line="57" Column="2" />
+      <File FileName="Assets\PlayerSetup.cs" Line="1" Column="1" />
+      <File FileName="Assets\GunGlock.cs" Line="1" Column="1" />
+      <File FileName="Assets\Target.cs" Line="16" Column="41" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
