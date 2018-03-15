@@ -7,7 +7,8 @@ public class GunGlock : MonoBehaviour {
 	public float range = 100f;
 	public float impforce = 30f;
 	public float fireRate = 2f;
-
+	public AudioSource Shot;
+	public AudioSource ReloadSound;
 	public int maxAmmo = 10;
 	public int currentAmmo;
 	public float reloadTime = 2f;
@@ -32,19 +33,27 @@ public class GunGlock : MonoBehaviour {
 			return;
 
 		if (currentAmmo <= 0)
-		{
-			StartCoroutine(Reload());
-			return;
+		{	
+			ReloadSound.Play ();
+			if (currentAmmo <= 0) 
+			{	
+
+				StartCoroutine (Reload ());
+
+				return;			
+			}
 		}
 		if (Input.GetButtonDown("Fire1") && Time.time >= nextTimeToFire)
 		{
 			nextTimeToFire = Time.time + 1f/fireRate;
+			Shot.Play();
 			Shoot();
+			currentAmmo--;
 		}
 	}
 
 	IEnumerator Reload ()
-	{
+	{		
 		isReloading = true;
 		animator.SetBool("Reloading", true);
 		yield return new WaitForSeconds(reloadTime - 0.25f);
