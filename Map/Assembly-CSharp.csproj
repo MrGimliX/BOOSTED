@@ -56,14 +56,13 @@
      <Compile Include="Assets\equalscript.cs" />
      <Compile Include="Assets\FlickeringLight.cs" />
      <Compile Include="Assets\GunGlock.cs" />
+     <Compile Include="Assets\HostGame.cs" />
      <Compile Include="Assets\Mainmenu.cs" />
      <Compile Include="Assets\MouseLock.cs" />
+     <Compile Include="Assets\PauseMenu.cs" />
      <Compile Include="Assets\PlayerController.cs" />
      <Compile Include="Assets\PlayerMotor.cs" />
      <Compile Include="Assets\PlayerSetup.cs" />
-     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
-     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
-     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />

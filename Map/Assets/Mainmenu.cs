@@ -13,6 +13,10 @@ public class Mainmenu : MonoBehaviour {
 	{
 		Application.Quit();
 	}
+	public void Lobby_Game ()
+	{
+		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex - 1);
+	}
 
 }
 	
