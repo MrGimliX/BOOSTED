@@ -57,6 +57,7 @@
      <Compile Include="Assets\FlickeringLight.cs" />
      <Compile Include="Assets\GunGlock.cs" />
      <Compile Include="Assets\HostGame.cs" />
+     <Compile Include="Assets\JoinGame.cs" />
      <Compile Include="Assets\Mainmenu.cs" />
      <Compile Include="Assets\MouseLock.cs" />
      <Compile Include="Assets\PauseMenu.cs" />
