@@ -30,7 +30,7 @@ public class JoinGame : MonoBehaviour {
 	}
 	public void Refresh()
 	{
-		networkManager.matchMaker.ListMatches(0, 20, "", false, 0, 0, OnMatchList);
+		networkManager.matchMaker.ListMatches(0, 20, "", true, 0, 0, OnMatchList);
 		status.text = "Loading...";
 	}
 	public void OnMatchList (bool success, string extendedInfo, List<MatchInfoSnapshot> matchList)
@@ -47,6 +47,13 @@ public class JoinGame : MonoBehaviour {
 		{
 			GameObject _roomListItemGO = Instantiate(roomListPrefab);
 			_roomListItemGO.transform.SetParent(roomListParent);
+
+			ServerList _joingame = _roomListItemGO.GetComponent<ServerList>();
+			if (_joingame != null)
+			{
+				_joingame.Setup(match, JoinRoom);
+			}
+
 			roomList.Add(_roomListItemGO);
 		}
 		if (roomList.Count == 0)
@@ -61,6 +68,13 @@ public class JoinGame : MonoBehaviour {
 			Destroy(roomList[i]);
 		}
 		roomList.Clear();
+	}
+
+	public void JoinRoom (MatchInfoSnapshot match)
+	{
+		networkManager.matchMaker.JoinMatch(match.networkId, "", "","", 0, 0, networkManager.OnMatchJoined);
+		ClearRoomList();
+		status.text = "JOINING...";
 	}
 
 }
