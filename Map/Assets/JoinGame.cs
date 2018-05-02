@@ -30,6 +30,7 @@ public class JoinGame : MonoBehaviour {
 	}
 	public void Refresh()
 	{
+		ClearRoomList();
 		networkManager.matchMaker.ListMatches(0, 20, "", true, 0, 0, OnMatchList);
 		status.text = "Loading...";
 	}
@@ -42,7 +43,6 @@ public class JoinGame : MonoBehaviour {
 			status.text = "Couldn't get room list.";
 			return;
 		}
-		ClearRoomList();
 		foreach (MatchInfoSnapshot match in matchList)
 		{
 			GameObject _roomListItemGO = Instantiate(roomListPrefab);
