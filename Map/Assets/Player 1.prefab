@@ -1831,7 +1831,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1105773812848086}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 1590678366, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
   m_Name: 
@@ -1860,7 +1860,7 @@ MonoBehaviour:
   - {fileID: 114441623605740374}
   - {fileID: 20500106967298824}
   - {fileID: 81451221471313846}
-  - {fileID: 0}
+  - {fileID: 95959144974079086}
   - {fileID: 95568105030277420}
   - {fileID: 114417348774774530}
   remoteLayerName: RemotePlayer

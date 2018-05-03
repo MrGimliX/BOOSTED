@@ -20,5 +20,25 @@ public class MouseLock : MonoBehaviour {
 		}
 			
 	}
+	void Update () 
+
+	{
+
+		if (Input.GetKeyDown(KeyCode.Escape))
+		{
+			if (Cursor.lockState == CursorLockMode.Locked) 
+			{
+			
+				Cursor.lockState = CursorLockMode.Confined;
+				Cursor.visible = true;
+			}
+			else
+			{
+				Cursor.lockState = CursorLockMode.Locked;
+				Cursor.visible = false;
+			}
+		}
+
+	}
 
 }

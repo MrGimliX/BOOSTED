@@ -70,6 +70,7 @@
      <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyServerList.cs" />
      <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyTopPanel.cs" />
      <Compile Include="Assets\Mainmenu.cs" />
+     <Compile Include="Assets\MenuButton.cs" />
      <Compile Include="Assets\MouseLock.cs" />
      <Compile Include="Assets\PauseMenu.cs" />
      <Compile Include="Assets\PlayerController.cs" />
@@ -263,10 +264,10 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
  <Reference Include="TextMeshPro-2017.1-1.0.56-Editor">
- <HintPath>D:/GitHub/BOOSTED/Map/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.1-1.0.56-Editor.dll</HintPath>
+ <HintPath>C:/Users/MrGimiX/Desktop/BOOSTED/Map/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.1-1.0.56-Editor.dll</HintPath>
  </Reference>
  <Reference Include="TextMeshPro-2017.1-1.0.56-Runtime">
- <HintPath>D:/GitHub/BOOSTED/Map/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.1-1.0.56-Runtime.dll</HintPath>
+ <HintPath>C:/Users/MrGimiX/Desktop/BOOSTED/Map/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.1-1.0.56-Runtime.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
