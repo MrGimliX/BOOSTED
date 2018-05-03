@@ -70,7 +70,6 @@ f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 86d36c43c53541d667100dc90b89cfba UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 1b8c02d0aa82fbf036a2b9b2d713eec3 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 8e9f5b922979e9356a11d2ee2b32ee60 Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.TiltInput
-7ebdc70bc0f6bdf5d5088dfa00250254 Assembly-CSharp.dll:.ServerList
 aa13baec1c19c8fa869cb21cb01a3767 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Water.WaterBase
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Characteranimator
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
@@ -221,7 +220,7 @@ d672cee35261f9935d5ce974c746730f TextMeshPro-2017.1-1.0.56-Runtime.dll:TMPro.TMP
 96e7294f11e4ae1fe77dd4bcd658b56d Assembly-CSharp-firstpass.dll:UnityStandardAssets.Cameras.LookatTarget
 b900ead596b2fb1093b31cb63a678767 Assembly-CSharp.dll:TMPro.Examples.TextMeshProFloatingText
 88e745da281bc889e248b64cf4d72a54 Assembly-CSharp-firstpass.dll:UnityStandardAssets.ImageEffects.SunShafts
-612e8bdcff8ec59101b4806a1709910f Assembly-CSharp.dll:.JoinGame
+3e592d5e5e078e9b570cbefeeb25988f Assembly-CSharp.dll:.JoinGame
 51e1fbfdb2391c749c3181a1d945bf1c Assembly-CSharp.dll:.FlickeringLight
 a7d3c6c6948d99dd4116e659ddcf5ac4 Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.ButtonHandler
 83877f03b51b3b13fa0d6c51291e0575 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Characters.FirstPerson.HeadBob
@@ -362,3 +361,4 @@ a412f64ff4e4667098f82b7fa0bf56e2 Assembly-CSharp-firstpass.dll:UnityStandardAsse
 34e025057ef78b1bf238460cdf6583a3 Assembly-CSharp.dll:TMPro.Examples.ObjectSpin
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.SimpleScript
 0f3d4bb7128a287827d041c696039525 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.AutoMobileShaderSwitch
+7ebdc70bc0f6bdf5d5088dfa00250254 Assembly-CSharp.dll:.RoomList

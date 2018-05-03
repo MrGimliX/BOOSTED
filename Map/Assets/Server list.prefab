@@ -39,8 +39,8 @@ GameObject:
   - component: {fileID: 222338811385343570}
   - component: {fileID: 114991334692872370}
   - component: {fileID: 114153313375665038}
-  - component: {fileID: 114824724814088188}
-  - component: {fileID: 114769292248304356}
+  - component: {fileID: 114295611091547618}
+  - component: {fileID: 114693221668644652}
   m_Layer: 5
   m_Name: Server list
   m_TagString: Untagged
@@ -87,7 +87,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114769292248304356}
+      - m_Target: {fileID: 114295611091547618}
         m_MethodName: JoinRoom
         m_Mode: 1
         m_Arguments:
@@ -133,7 +133,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Button
---- !u!114 &114769292248304356
+--- !u!114 &114295611091547618
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -141,11 +141,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1837820007805250}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29ced132041f7402db96aab7bae7b656, type: 3}
+  m_Script: {fileID: 11500000, guid: 911b92fd137574bceb3adf35c4fd465f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   roomNameText: {fileID: 114200682479604824}
---- !u!114 &114824724814088188
+--- !u!114 &114693221668644652
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -160,7 +160,7 @@ MonoBehaviour:
   m_MinWidth: -1
   m_MinHeight: -1
   m_PreferredWidth: -1
-  m_PreferredHeight: 25
+  m_PreferredHeight: 30
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
@@ -238,5 +238,5 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 10}
+  m_SizeDelta: {x: 100, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}

@@ -64,12 +64,12 @@
      <Compile Include="Assets\PlayerController.cs" />
      <Compile Include="Assets\PlayerMotor.cs" />
      <Compile Include="Assets\PlayerSetup.cs" />
+     <Compile Include="Assets\RoomList.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
-     <Compile Include="Assets\ServerList.cs" />
      <Compile Include="Assets\Target.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
