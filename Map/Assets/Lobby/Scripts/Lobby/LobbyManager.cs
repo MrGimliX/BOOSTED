@@ -5,6 +5,7 @@ using UnityEngine.Networking;
 using UnityEngine.Networking.Types;
 using UnityEngine.Networking.Match;
 using System.Collections;
+using System.Collections.Generic;
 
 
 namespace Prototype.NetworkLobby
@@ -14,6 +15,8 @@ namespace Prototype.NetworkLobby
 		static short MsgKicked = MsgType.Highest + 1;
 
 		static public LobbyManager s_Singleton;
+
+		public List<GameObject> prefabs;
 
 
 		[Header("Unity UI Lobby")]
@@ -331,7 +334,6 @@ namespace Prototype.NetworkLobby
 
 			if (_lobbyHooks)
 				_lobbyHooks.OnLobbyServerSceneLoadedForPlayer(this, lobbyPlayer, gamePlayer);
-
 			return true;
 		}
 
@@ -417,5 +419,17 @@ namespace Prototype.NetworkLobby
 			ChangeTo(mainMenuPanel);
 			infoPanel.Display("Cient error : " + (errorCode == 6 ? "timeout" : errorCode.ToString()), "Close", null);
 		}
+
+		public override GameObject OnLobbyServerCreateGamePlayer(NetworkConnection conn, short playerControllerId)
+		{
+			int Len = prefabs.Count - 1;
+			int index = Random.Range (0, Len);
+			GameObject _temp = (GameObject)GameObject.Instantiate(prefabs[index]);
+			prefabs.RemoveAt (index);
+			return _temp;
+		}
+
+
+
 	}
 }
