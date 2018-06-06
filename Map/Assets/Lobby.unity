@@ -3395,7 +3395,7 @@ MonoBehaviour:
   m_OfflineScene: Lobby
   m_OnlineScene: 
   m_SpawnPrefabs:
-  - {fileID: 1398889381768758, guid: 91074e193e2434adb91bc28c12c48596, type: 2}
+  - {fileID: 1457518566985506, guid: 85482609d7dc6be4db796ececf62be44, type: 2}
   m_CustomConfig: 0
   m_MaxConnections: 4
   m_ConnectionConfig:
@@ -3457,14 +3457,14 @@ MonoBehaviour:
   m_MinPlayers: 2
   m_LobbyPlayerPrefab: {fileID: 11487034, guid: ad727d7e1462ecc4f83c898ecc501997,
     type: 2}
-  m_GamePlayerPrefab: {fileID: 1105773812848086, guid: dfda00b0f4f810641893859b04ef1f76,
+  m_GamePlayerPrefab: {fileID: 1457518566985506, guid: 85482609d7dc6be4db796ececf62be44,
     type: 2}
   m_LobbyScene: Lobby
   m_PlayScene: MapScene
   lobbySlots: []
   prefabs:
-  - {fileID: 1398889381768758, guid: 91074e193e2434adb91bc28c12c48596, type: 2}
-  - {fileID: 1105773812848086, guid: dfda00b0f4f810641893859b04ef1f76, type: 2}
+  - {fileID: 1457518566985506, guid: 85482609d7dc6be4db796ececf62be44, type: 2}
+  - {fileID: 1457518566985506, guid: 85482609d7dc6be4db796ececf62be44, type: 2}
   prematchCountdown: 5
   topPanel: {fileID: 2105943446}
   mainMenuPanel: {fileID: 222795282}

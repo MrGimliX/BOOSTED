@@ -10,10 +10,13 @@ public class PlayerController : MonoBehaviour {
 	[SerializeField]
 	private float CameraSensitivity = 5f;
 
+	public Transform[] spawnPoints;
 	private PlayerMotor motor;
+
 
 	void Start ()
 	{
+		Spawn ();
 		motor = GetComponent<PlayerMotor> ();
 	}
 
@@ -41,6 +44,11 @@ public class PlayerController : MonoBehaviour {
 
 		motor.RotateCam (_CameraRotation);
 
+	}
+	void Spawn ()
+	{
+		int spawnpointIndex = Random.Range(0, spawnPoints.Length);
+		this.transform.position = spawnPoints[spawnpointIndex].position;
 	}
 
 }

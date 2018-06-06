@@ -1696,6 +1696,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 16
   CameraSensitivity: 5
+  spawnPoints:
+  - {fileID: 4522560393439324, guid: a9645fdd31943af44a4471f63722d49d, type: 2}
+  - {fileID: 4282160695818028, guid: 6cadd678dd1cb3a4ea77bddbb9c7ac21, type: 2}
+  - {fileID: 4318351721467746, guid: d83d758e6c6ac9148b0bce756fcd7a31, type: 2}
 --- !u!114 &114519336241100682
 MonoBehaviour:
   m_ObjectHideFlags: 1
