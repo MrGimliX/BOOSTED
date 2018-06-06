@@ -423,7 +423,9 @@ namespace Prototype.NetworkLobby
 		public override GameObject OnLobbyServerCreateGamePlayer(NetworkConnection conn, short playerControllerId)
 		{
 			int Len = prefabs.Count - 1;
-			int index = Random.Range (0, Len);
+			int index = 0;
+			if (Len == 0)
+				throw new UnityException();
 			GameObject _temp = (GameObject)GameObject.Instantiate(prefabs[index]);
 			prefabs.RemoveAt (index);
 			return _temp;
