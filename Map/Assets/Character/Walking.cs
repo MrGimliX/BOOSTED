@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class Walking : MonoBehaviour {
+public class Walking : NetworkBehaviour {
 	private Animator anim;
 	private float vert;
 
@@ -14,6 +14,10 @@ public class Walking : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (!isLocalPlayer) 
+		{
+			anim.enabled = false;
+		}
 		vert = Input.GetAxis ("Vertical");
 		anim.SetFloat ("walk", vert);
 	}

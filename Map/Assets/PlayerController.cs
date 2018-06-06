@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 [RequireComponent(typeof(PlayerMotor))]
 public class PlayerController : MonoBehaviour {
 
@@ -12,6 +13,7 @@ public class PlayerController : MonoBehaviour {
 
 	public Transform[] spawnPoints;
 	private PlayerMotor motor;
+
 
 
 	void Start ()
@@ -43,6 +45,8 @@ public class PlayerController : MonoBehaviour {
 		Vector3 _CameraRotation = new Vector3 (_xRot, 0f, 0f) * CameraSensitivity;
 
 		motor.RotateCam (_CameraRotation);
+
+
 
 	}
 	void Spawn ()

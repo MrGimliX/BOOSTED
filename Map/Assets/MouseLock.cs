@@ -29,7 +29,7 @@ public class MouseLock : MonoBehaviour {
 			if (Cursor.lockState == CursorLockMode.Locked) 
 			{
 			
-				Cursor.lockState = CursorLockMode.Confined;
+				Cursor.lockState = CursorLockMode.None;
 				Cursor.visible = true;
 			}
 			else

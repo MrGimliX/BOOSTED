@@ -552,6 +552,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4622040187530048}
+  - component: {fileID: 114461068187113012}
   m_Layer: 0
   m_Name: Upper Arm.L
   m_TagString: Untagged
@@ -2274,7 +2275,7 @@ MonoBehaviour:
     i14: 69
     i15: 46
   m_ServerOnly: 0
-  m_LocalPlayerAuthority: 0
+  m_LocalPlayerAuthority: 1
 --- !u!114 &114349119464975256
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2327,6 +2328,19 @@ MonoBehaviour:
   - {fileID: 114162771902146650}
   - {fileID: 95606388835820102}
   remoteLayerName: RemotePlayer
+--- !u!114 &114461068187113012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1563814734875014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e256b39c8a881046a7bc78048a735f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontalSpeed: 2
+  verticalSpeed: 2
 --- !u!114 &114520601612121450
 MonoBehaviour:
   m_ObjectHideFlags: 1

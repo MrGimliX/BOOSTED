@@ -19,11 +19,13 @@ public class PlayerSetup : NetworkBehaviour {
 		}
 		else
 		{
+			
 			sceneCamera = Camera.main;
 			if (sceneCamera != null)
 			{
 				sceneCamera.gameObject.SetActive (false);
 			}
+
 		}
 		RegisterPlayer();
 	}
@@ -54,4 +56,6 @@ public class PlayerSetup : NetworkBehaviour {
 			sceneCamera.gameObject.SetActive (true);
 		}
 	}
+
+
 }

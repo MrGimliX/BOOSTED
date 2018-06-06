@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ArmMove.cs" />
      <Compile Include="Assets\Character\Walking.cs" />
      <Compile Include="Assets\Characteranimator.cs" />
      <Compile Include="Assets\equalscript.cs" />
