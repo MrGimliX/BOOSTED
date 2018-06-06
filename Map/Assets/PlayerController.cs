@@ -14,12 +14,13 @@ public class PlayerController : MonoBehaviour {
 	public Transform[] spawnPoints;
 	private PlayerMotor motor;
 
-
+	private Animator anim;
 
 	void Start ()
 	{
 		Spawn ();
 		motor = GetComponent<PlayerMotor> ();
+		anim = GetComponent<Animator> ();
 	}
 
 	void Update()
@@ -33,6 +34,12 @@ public class PlayerController : MonoBehaviour {
 		Vector3 _velocity = (movVertical + movHorizontal).normalized * speed;
 
 		motor.Move (_velocity);
+		if (_velocity == new Vector3 (0, 0, 0)) {
+			anim.SetBool ("walk", false);
+		} else 
+		{
+			anim.SetBool ("walk", true);
+		}
 
 		float _yRot = Input.GetAxisRaw ("Mouse X");
 

@@ -42,6 +42,8 @@ GameObject:
   - component: {fileID: 114376980197358238}
   - component: {fileID: 114767235493480306}
   - component: {fileID: 114205930238168576}
+  - component: {fileID: 95977045643742052}
+  - component: {fileID: 114027486051882540}
   m_Layer: 0
   m_Name: Trapper
   m_TagString: Untagged
@@ -726,10 +728,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4900699796906306}
-  - component: {fileID: 95762119070724070}
-  - component: {fileID: 114561538272182462}
-  - component: {fileID: 114946768762449646}
-  - component: {fileID: 114624063924236950}
   m_Layer: 0
   m_Name: chara_trapper
   m_TagString: Untagged
@@ -1675,23 +1673,42 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1423566630214872}
   m_Enabled: 1
---- !u!95 &95762119070724070
+--- !u!95 &95977045643742052
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1864501264770956}
+  m_GameObject: {fileID: 1016312702017320}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 3af25a40cf7c1624db15bfe6bff4b448, type: 3}
-  m_Controller: {fileID: 9100000, guid: 66cc8a4fc1de3324b8dc72b130297091, type: 2}
-  m_CullingMode: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86eefd3f57fbe1c40bf4985cc4fa0547, type: 2}
+  m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114027486051882540
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1016312702017320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1590678366, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Animator: {fileID: 95977045643742052}
+  m_ParameterSendBits: 1
+  param0: 
+  param1: 
+  param2: 
+  param3: 
+  param4: 
+  param5: 
 --- !u!114 &114080020966683542
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1745,36 +1762,6 @@ MonoBehaviour:
   - {fileID: 4670325005177206, guid: 67582b6454739894a930a7a234d903d3, type: 2}
   - {fileID: 4783550734368272, guid: 849c0f30a0dc1f14da46461cf3baf5d9, type: 2}
   - {fileID: 4310228066139606, guid: 316797818d45d4244a73f563babb78bc, type: 2}
---- !u!114 &114561538272182462
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1864501264770956}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3028f26afa9267a41b01c728b8ef1003, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114624063924236950
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1864501264770956}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1590678366, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Animator: {fileID: 95762119070724070}
-  m_ParameterSendBits: 1
-  param0: 
-  param1: 
-  param2: 
-  param3: 
-  param4: 
-  param5: 
 --- !u!114 &114767235493480306
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1840,38 +1827,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 20839022421512216}
---- !u!114 &114946768762449646
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1864501264770956}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 115
-    i1: 19
-    i2: 156
-    i3: 207
-    i4: 246
-    i5: 106
-    i6: 134
-    i7: 100
-    i8: 43
-    i9: 54
-    i10: 161
-    i11: 145
-    i12: 208
-    i13: 233
-    i14: 125
-    i15: 146
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 1
 --- !u!124 &124523189875009814
 Behaviour:
   m_ObjectHideFlags: 1

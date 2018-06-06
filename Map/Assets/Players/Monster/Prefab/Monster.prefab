@@ -117,6 +117,8 @@ GameObject:
   - component: {fileID: 114235618653178548}
   - component: {fileID: 114750918905243552}
   - component: {fileID: 114549952253663908}
+  - component: {fileID: 95898449918750122}
+  - component: {fileID: 114712024063108606}
   m_Layer: 0
   m_Name: Monster
   m_TagString: Untagged
@@ -660,10 +662,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4530234326618608}
-  - component: {fileID: 95222541526770064}
-  - component: {fileID: 114755623191301448}
-  - component: {fileID: 114413857472590676}
-  - component: {fileID: 114457966551791132}
   m_Layer: 0
   m_Name: chara_monster
   m_TagString: Untagged
@@ -1530,7 +1528,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1500954739704160}
-  m_LocalRotation: {x: 0.46561283, y: 0.28414539, z: 0.31526113, w: 0.7765799}
+  m_LocalRotation: {x: 0.4656129, y: 0.2841454, z: 0.31526116, w: 0.77658004}
   m_LocalPosition: {x: -7.590279e-10, y: 0.0018111039, z: -3.7252902e-11}
   m_LocalScale: {x: 1, y: 0.99999994, z: 0.99999994}
   m_Children:
@@ -1615,17 +1613,17 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1854561744765880}
   m_Enabled: 1
---- !u!95 &95222541526770064
+--- !u!95 &95898449918750122
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1844812923000178}
+  m_GameObject: {fileID: 1134594649198580}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 8ccb34d8dfd764b458e41c720603e128, type: 3}
-  m_Controller: {fileID: 9100000, guid: 7329dd3787cd0d241839af38ffe0878c, type: 2}
-  m_CullingMode: 1
+  m_Controller: {fileID: 9100000, guid: be2bb1b21714649488c3a750092326ff, type: 2}
+  m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
@@ -1649,38 +1647,6 @@ MonoBehaviour:
   - {fileID: 20648191608549908}
   - {fileID: 81377901759932544}
   remoteLayerName: RemotePlayer
---- !u!114 &114413857472590676
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1844812923000178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 228
-    i1: 16
-    i2: 230
-    i3: 236
-    i4: 67
-    i5: 237
-    i6: 108
-    i7: 228
-    i8: 43
-    i9: 35
-    i10: 115
-    i11: 124
-    i12: 158
-    i13: 145
-    i14: 207
-    i15: 154
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 1
 --- !u!114 &114426528093975058
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1693,25 +1659,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 20648191608549908}
---- !u!114 &114457966551791132
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1844812923000178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1590678366, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Animator: {fileID: 95222541526770064}
-  m_ParameterSendBits: 1
-  param0: 
-  param1: 
-  param2: 
-  param3: 
-  param4: 
-  param5: 
 --- !u!114 &114549952253663908
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1763,6 +1710,25 @@ MonoBehaviour:
     i15: 154
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
+--- !u!114 &114712024063108606
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1134594649198580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1590678366, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Animator: {fileID: 95898449918750122}
+  m_ParameterSendBits: 1
+  param0: 
+  param1: 
+  param2: 
+  param3: 
+  param4: 
+  param5: 
 --- !u!114 &114750918905243552
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1784,17 +1750,6 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 10
   m_InterpolateMovement: 1
---- !u!114 &114755623191301448
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1844812923000178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3028f26afa9267a41b01c728b8ef1003, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114953443055182848
 MonoBehaviour:
   m_ObjectHideFlags: 1

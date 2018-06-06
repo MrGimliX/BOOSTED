@@ -448,7 +448,6 @@ GameObject:
   - component: {fileID: 114905444335129454}
   - component: {fileID: 95171391173756828}
   - component: {fileID: 114024762204173264}
-  - component: {fileID: 114486288805280876}
   m_Layer: 0
   m_Name: Hunter
   m_TagString: Untagged
@@ -2071,8 +2070,8 @@ Animator:
   m_GameObject: {fileID: 1453303881731052}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 71e0926a49e65b947b2ef703260fddbb, type: 3}
-  m_Controller: {fileID: 9100000, guid: ae64890785b27ec4399387dd531b1a23, type: 2}
-  m_CullingMode: 1
+  m_Controller: {fileID: 9100000, guid: d0429b7d819fe57499ce7c3b5b2d9444, type: 2}
+  m_CullingMode: 0
   m_UpdateMode: 1
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
@@ -2285,17 +2284,6 @@ MonoBehaviour:
   impactEffect: {fileID: 1251893516590286, guid: eec08fac782c7a74384127cf5eb82bb5,
     type: 2}
   animator: {fileID: 95612125969067336}
---- !u!114 &114486288805280876
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1453303881731052}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3028f26afa9267a41b01c728b8ef1003, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114518099662799586
 MonoBehaviour:
   m_ObjectHideFlags: 1

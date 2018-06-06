@@ -231,10 +231,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4399053985126046}
-  - component: {fileID: 95813810882801644}
-  - component: {fileID: 114742406786913332}
-  - component: {fileID: 114529519147762284}
-  - component: {fileID: 114200532484025576}
   m_Layer: 0
   m_Name: chara_nurse
   m_TagString: Untagged
@@ -771,6 +767,8 @@ GameObject:
   - component: {fileID: 114071659776470526}
   - component: {fileID: 114593594080535722}
   - component: {fileID: 114654509030204054}
+  - component: {fileID: 95536691637195668}
+  - component: {fileID: 114295068599963158}
   m_Layer: 0
   m_Name: Nurse
   m_TagString: Untagged
@@ -1474,7 +1472,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1469414913409814}
-  m_LocalRotation: {x: -0.12089242, y: 0.06429484, z: 0.9903026, w: -0.023491686}
+  m_LocalRotation: {x: -0.12089242, y: 0.06429485, z: 0.9903026, w: -0.02349169}
   m_LocalPosition: {x: -0.00079762907, y: 0.000041711868, z: -0.000043458997}
   m_LocalScale: {x: 1.0000035, y: 1.0000005, z: 1.0000095}
   m_Children:
@@ -1645,19 +1643,19 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1970055967445726}
   m_Enabled: 1
---- !u!95 &95813810882801644
+--- !u!95 &95536691637195668
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1283132269774570}
+  m_GameObject: {fileID: 1862861646588950}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: b427dc1186752984ea538b636ae858f0, type: 3}
-  m_Controller: {fileID: 9100000, guid: ac752dd701ec6a04899b4671685a320d, type: 2}
-  m_CullingMode: 1
+  m_Controller: {fileID: 9100000, guid: e194c1a3db5748c4db789425a1365aa3, type: 2}
+  m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -1679,25 +1677,6 @@ MonoBehaviour:
   - {fileID: 20285901529672254}
   - {fileID: 81848869664422566}
   remoteLayerName: RemotePlayer
---- !u!114 &114200532484025576
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1283132269774570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1590678366, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Animator: {fileID: 95813810882801644}
-  m_ParameterSendBits: 1
-  param0: 
-  param1: 
-  param2: 
-  param3: 
-  param4: 
-  param5: 
 --- !u!114 &114281983236432584
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1730,38 +1709,25 @@ MonoBehaviour:
     i15: 221
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
---- !u!114 &114529519147762284
+--- !u!114 &114295068599963158
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1283132269774570}
+  m_GameObject: {fileID: 1862861646588950}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Script: {fileID: 1590678366, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 192
-    i1: 90
-    i2: 64
-    i3: 231
-    i4: 183
-    i5: 79
-    i6: 6
-    i7: 20
-    i8: 90
-    i9: 55
-    i10: 62
-    i11: 207
-    i12: 208
-    i13: 230
-    i14: 210
-    i15: 221
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 1
+  m_Animator: {fileID: 95536691637195668}
+  m_ParameterSendBits: 1
+  param0: 
+  param1: 
+  param2: 
+  param3: 
+  param4: 
+  param5: 
 --- !u!114 &114593594080535722
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1819,17 +1785,6 @@ MonoBehaviour:
   - {fileID: 4754916140235370, guid: 6f99675fc3d41a64daf81ac79136905c, type: 2}
   - {fileID: 4463735430307852, guid: 3ca4553cecd65234abde6d77caae5316, type: 2}
   - {fileID: 4435971772724320, guid: 2d11c523216f0d2428511d3ed00ab094, type: 2}
---- !u!114 &114742406786913332
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1283132269774570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3028f26afa9267a41b01c728b8ef1003, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114868198728576418
 MonoBehaviour:
   m_ObjectHideFlags: 1

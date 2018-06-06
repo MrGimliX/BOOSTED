@@ -19,10 +19,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4518051334237152}
-  - component: {fileID: 95736473568243604}
-  - component: {fileID: 114025922379863880}
-  - component: {fileID: 114331751705821494}
-  - component: {fileID: 114520601612121450}
   m_Layer: 0
   m_Name: chara_runner
   m_TagString: Untagged
@@ -925,6 +921,8 @@ GameObject:
   - component: {fileID: 114407395389985054}
   - component: {fileID: 114349119464975256}
   - component: {fileID: 114564899582300482}
+  - component: {fileID: 95274089516816606}
+  - component: {fileID: 114346051510291054}
   m_Layer: 0
   m_Name: Runner
   m_TagString: Untagged
@@ -1080,7 +1078,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1139060106049286}
-  m_LocalRotation: {x: -0.12089242, y: 0.06429484, z: 0.9903026, w: -0.023491686}
+  m_LocalRotation: {x: -0.12089242, y: 0.064294845, z: 0.9903026, w: -0.023491688}
   m_LocalPosition: {x: -0.00079762907, y: 0.000041711868, z: -0.000043458997}
   m_LocalScale: {x: 1.0000035, y: 1.0000005, z: 1.0000095}
   m_Children:
@@ -2094,6 +2092,23 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1164427507881606}
   m_Enabled: 1
+--- !u!95 &95274089516816606
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1929808805452446}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: ba6a0b86417ad4f4aa7964cbcaec6954, type: 3}
+  m_Controller: {fileID: 9100000, guid: bd1d748b5f8c1c544871d0ed838252f2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!95 &95606388835820102
 Animator:
   serializedVersion: 3
@@ -2107,23 +2122,6 @@ Animator:
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
---- !u!95 &95736473568243604
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1010026084259174}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: ba6a0b86417ad4f4aa7964cbcaec6954, type: 3}
-  m_Controller: {fileID: 9100000, guid: 3a1c981b6221d1f489e5ff4191f92226, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -2164,17 +2162,6 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &114025922379863880
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1010026084259174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3028f26afa9267a41b01c728b8ef1003, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114124514125183304
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2244,38 +2231,25 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114331751705821494
+--- !u!114 &114346051510291054
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1010026084259174}
+  m_GameObject: {fileID: 1929808805452446}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Script: {fileID: 1590678366, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 221
-    i1: 244
-    i2: 249
-    i3: 209
-    i4: 226
-    i5: 39
-    i6: 96
-    i7: 20
-    i8: 73
-    i9: 163
-    i10: 46
-    i11: 230
-    i12: 8
-    i13: 99
-    i14: 69
-    i15: 46
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 1
+  m_Animator: {fileID: 95274089516816606}
+  m_ParameterSendBits: 1
+  param0: 
+  param1: 
+  param2: 
+  param3: 
+  param4: 
+  param5: 
 --- !u!114 &114349119464975256
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2341,25 +2315,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalSpeed: 2
   verticalSpeed: 2
---- !u!114 &114520601612121450
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1010026084259174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1590678366, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Animator: {fileID: 95736473568243604}
-  m_ParameterSendBits: 1
-  param0: 
-  param1: 
-  param2: 
-  param3: 
-  param4: 
-  param5: 
 --- !u!114 &114564899582300482
 MonoBehaviour:
   m_ObjectHideFlags: 1
