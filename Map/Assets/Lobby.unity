@@ -3019,7 +3019,7 @@ RectTransform:
   - {fileID: 822317219}
   - {fileID: 1918708924}
   - {fileID: 69386568}
-  - {fileID: 1478234120}
+  - {fileID: 1470119873}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3395,10 +3395,10 @@ MonoBehaviour:
   m_OfflineScene: Lobby
   m_OnlineScene: 
   m_SpawnPrefabs:
-  - {fileID: 1453303881731052, guid: db1b68a303cbd0f4c943812419a96891, type: 2}
-  - {fileID: 1862861646588950, guid: c05a40e7b74f06145a373ecfd0e6d2dd, type: 2}
   - {fileID: 1929808805452446, guid: ddf4f9d1e227601449a32ee60863452e, type: 2}
-  - {fileID: 1016312702017320, guid: 73139ccff66a86642b36a191d0e97d92, type: 2}
+  - {fileID: 1929808805452446, guid: ddf4f9d1e227601449a32ee60863452e, type: 2}
+  - {fileID: 1929808805452446, guid: ddf4f9d1e227601449a32ee60863452e, type: 2}
+  - {fileID: 1929808805452446, guid: ddf4f9d1e227601449a32ee60863452e, type: 2}
   m_CustomConfig: 0
   m_MaxConnections: 4
   m_ConnectionConfig:
@@ -3460,17 +3460,17 @@ MonoBehaviour:
   m_MinPlayers: 2
   m_LobbyPlayerPrefab: {fileID: 11487034, guid: ad727d7e1462ecc4f83c898ecc501997,
     type: 2}
-  m_GamePlayerPrefab: {fileID: 1134594649198580, guid: e410e6ec43ed6ce42b23737c9e91cf9a,
+  m_GamePlayerPrefab: {fileID: 1929808805452446, guid: ddf4f9d1e227601449a32ee60863452e,
     type: 2}
   m_LobbyScene: Lobby
   m_PlayScene: MapScene
   lobbySlots: []
   prefabs:
-  - {fileID: 1134594649198580, guid: e410e6ec43ed6ce42b23737c9e91cf9a, type: 2}
-  - {fileID: 1453303881731052, guid: db1b68a303cbd0f4c943812419a96891, type: 2}
-  - {fileID: 1862861646588950, guid: c05a40e7b74f06145a373ecfd0e6d2dd, type: 2}
   - {fileID: 1929808805452446, guid: ddf4f9d1e227601449a32ee60863452e, type: 2}
-  - {fileID: 1016312702017320, guid: 73139ccff66a86642b36a191d0e97d92, type: 2}
+  - {fileID: 1929808805452446, guid: ddf4f9d1e227601449a32ee60863452e, type: 2}
+  - {fileID: 1929808805452446, guid: ddf4f9d1e227601449a32ee60863452e, type: 2}
+  - {fileID: 1929808805452446, guid: ddf4f9d1e227601449a32ee60863452e, type: 2}
+  - {fileID: 1929808805452446, guid: ddf4f9d1e227601449a32ee60863452e, type: 2}
   prematchCountdown: 5
   topPanel: {fileID: 2105943446}
   mainMenuPanel: {fileID: 222795282}
@@ -3620,16 +3620,16 @@ RectTransform:
   m_AnchoredPosition: {x: 593.5, y: -44}
   m_SizeDelta: {x: 325, y: 24}
   m_Pivot: {x: 0, y: 0.5}
---- !u!1 &1478234119
+--- !u!1 &1470119872
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 1478234120}
-  - component: {fileID: 1478234122}
-  - component: {fileID: 1478234121}
+  - component: {fileID: 1470119873}
+  - component: {fileID: 1470119875}
+  - component: {fileID: 1470119874}
   m_Layer: 5
   m_Name: EventSystem
   m_TagString: Untagged
@@ -3637,12 +3637,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1478234120
-Transform:
+--- !u!224 &1470119873
+RectTransform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1478234119}
+  m_GameObject: {fileID: 1470119872}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -3650,12 +3650,17 @@ Transform:
   m_Father: {fileID: 1239424683}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1478234121
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1470119874
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1478234119}
+  m_GameObject: {fileID: 1470119872}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1077351063, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
@@ -3668,12 +3673,12 @@ MonoBehaviour:
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
   m_ForceModuleActive: 0
---- !u!114 &1478234122
+--- !u!114 &1470119875
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1478234119}
+  m_GameObject: {fileID: 1470119872}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -619905303, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}

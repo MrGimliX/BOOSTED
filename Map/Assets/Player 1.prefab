@@ -304,7 +304,6 @@ GameObject:
   - component: {fileID: 33173621677765916}
   - component: {fileID: 23561658682704024}
   - component: {fileID: 95959144974079086}
-  - component: {fileID: 114417348774774530}
   m_Layer: 0
   m_Name: Glock_3d
   m_TagString: Untagged
@@ -1658,31 +1657,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114417348774774530
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1461241123709372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3a5c8e3ef3e1ea48b394bdcd2d1634d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  range: 100
-  impforce: 30
-  fireRate: 2
-  Shot: {fileID: 82036322182674308}
-  ReloadSound: {fileID: 82147038264966622}
-  maxAmmo: 10
-  currentAmmo: 10
-  reloadTime: 2
-  fpsCam: {fileID: 20500106967298824}
-  muzzleFlash: {fileID: 198213057088418478}
-  impactEffect: {fileID: 1251893516590286, guid: eec08fac782c7a74384127cf5eb82bb5,
-    type: 2}
-  animator: {fileID: 95959144974079086}
 --- !u!114 &114441623605740374
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1866,7 +1840,7 @@ MonoBehaviour:
   - {fileID: 81451221471313846}
   - {fileID: 95959144974079086}
   - {fileID: 95568105030277420}
-  - {fileID: 114417348774774530}
+  - {fileID: 0}
   remoteLayerName: RemotePlayer
 --- !u!124 &124984995118394466
 Behaviour:
