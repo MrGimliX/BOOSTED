@@ -2324,6 +2324,9 @@ MonoBehaviour:
   - {fileID: 81848869664422566}
   GraphicsToDisable: {fileID: 1257627425346722}
   remoteLayerName: RemotePlayer
+  playerUIPrefab: {fileID: 1143719774523834, guid: 8508cc9d5012f794f9e6040d5ff7b07f,
+    type: 2}
+  playerUIInstance: {fileID: 0}
 --- !u!114 &114119780813035936
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2356,6 +2359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96755bcc316d28b4fa2790d102d492ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WaitImeBetweenShots: 1
   cam: {fileID: 20285901529672254}
   mask:
     serializedVersion: 2
@@ -2428,9 +2432,9 @@ MonoBehaviour:
     damage: -10
     range: 10
     firerate: 0
-    maxBullets: 20
+    maxBullets: 2
     bullets: 20
-    reloadTime: 10
+    reloadTime: 8
     graphics: {fileID: 1373105954891028}
   currentGraphics: {fileID: 114950574737191862}
   isReloading: 0

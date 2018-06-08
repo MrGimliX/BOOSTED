@@ -1,12 +1,13 @@
 ﻿using UnityEngine.Networking;
 using UnityEngine;
+using System.Collections;
 
 [RequireComponent (typeof(WeaponManager))]
 public class PlayerShoot : NetworkBehaviour {
 
 	private const string PLAYER_TAG = "Player";
 	private const string MONSTER_TAG = "Monster";
-
+	public float WaitImeBetweenShots = 1f;
 
 	private PlayerWeapon currentweapon;
 
@@ -38,7 +39,8 @@ public class PlayerShoot : NetworkBehaviour {
 		
 			if (Input.GetButtonDown ("Fire1")) {
 			
-				Shoot ();		
+				Shoot ();
+				StartCoroutine (Coroutine_WaitShots ());
 			}
 		}
 	}
@@ -79,6 +81,13 @@ public class PlayerShoot : NetworkBehaviour {
 			return;
 		}
 
+		if (currentweapon.bullets <= 0) {
+			weaponManager.Reload ();
+			weaponManager.GetCurrentGraphics ().Reload.Play ();
+			return;
+		}
+
+		currentweapon.bullets--;
 		// We are shooting here 
 
 		CmdOnShoot ();
@@ -94,13 +103,15 @@ public class PlayerShoot : NetworkBehaviour {
 			}
 
 
-			if (currentweapon.bullets <= 0) {
-				weaponManager.Reload ();
-				weaponManager.GetCurrentGraphics ().Reload.Play ();
-				return;
-			}
-			currentweapon.bullets--;
+
 			CmdOnHit (_hit.point, _hit.normal);
+
+
+		}
+		if (currentweapon.bullets <= 0) {
+			weaponManager.Reload ();
+			weaponManager.GetCurrentGraphics ().Reload.Play ();
+			return;
 		}
 
 	}
@@ -112,6 +123,11 @@ public class PlayerShoot : NetworkBehaviour {
 
 		Player _player = GameManager.GetPlayer (_playerID);
 		_player.RpcTakeDamage (damage);
+	}
+
+	private IEnumerator Coroutine_WaitShots()
+	{
+		yield return new WaitForSeconds (WaitImeBetweenShots);
 	}
 
 }

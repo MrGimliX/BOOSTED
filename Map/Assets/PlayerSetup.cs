@@ -12,6 +12,11 @@ public class PlayerSetup : NetworkBehaviour {
 	[SerializeField]
 	string remoteLayerName = "RemotePlayer";
 
+	[SerializeField]
+	public GameObject playerUIPrefab;
+
+	[HideInInspector]
+	public GameObject playerUIInstance;
 
 	Camera sceneCamera;
 	void Start ()
@@ -33,6 +38,15 @@ public class PlayerSetup : NetworkBehaviour {
 			{
 				sceneCamera.gameObject.SetActive (false);
 			}
+			playerUIInstance = Instantiate (playerUIPrefab);
+			playerUIInstance.name = playerUIPrefab.name;
+
+			PlayerUI ui = playerUIInstance.GetComponent<PlayerUI> ();
+			if (ui == null)
+				Debug.LogError ("No PlayerUI Component on PlayerUI prefab");
+			ui.SetPlayer (GetComponent<Player>());
+
+
 
 		}
 		GetComponent<Player> ().Setup ();
@@ -63,6 +77,7 @@ public class PlayerSetup : NetworkBehaviour {
 
 	void OnDisable ()
 	{
+		Destroy (playerUIInstance);
 		if (sceneCamera != null)
 		{
 			sceneCamera.gameObject.SetActive (true);

@@ -1926,7 +1926,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1500954739704160}
-  m_LocalRotation: {x: 0.4656129, y: 0.2841454, z: 0.31526116, w: 0.77658004}
+  m_LocalRotation: {x: 0.46561283, y: 0.28414539, z: 0.31526113, w: 0.7765799}
   m_LocalPosition: {x: -7.590279e-10, y: 0.0018111039, z: -3.7252902e-11}
   m_LocalScale: {x: 1, y: 0.99999994, z: 0.99999994}
   m_Children:
@@ -2494,6 +2494,9 @@ MonoBehaviour:
   - {fileID: 81377901759932544}
   GraphicsToDisable: {fileID: 0}
   remoteLayerName: RemotePlayer
+  playerUIPrefab: {fileID: 1143719774523834, guid: 8508cc9d5012f794f9e6040d5ff7b07f,
+    type: 2}
+  playerUIInstance: {fileID: 0}
 --- !u!114 &114395556376083774
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2509,11 +2512,11 @@ MonoBehaviour:
   primaryWeapon:
     name: Club
     damage: 60
-    range: 10
+    range: 5
     firerate: 0
-    maxBullets: 999999
+    maxBullets: 1
     bullets: 20
-    reloadTime: 0
+    reloadTime: 1
     graphics: {fileID: 1450686797210940}
   currentGraphics: {fileID: 114510079906237934}
   isReloading: 0
@@ -2607,6 +2610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96755bcc316d28b4fa2790d102d492ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WaitImeBetweenShots: 1
   cam: {fileID: 20648191608549908}
   mask:
     serializedVersion: 2

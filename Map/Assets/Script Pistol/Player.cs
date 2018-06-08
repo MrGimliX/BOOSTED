@@ -18,6 +18,12 @@ public class Player : NetworkBehaviour {
 	[SyncVar]
 	private int currentHealth;
 
+	public float GetHealthPct()
+	{
+		
+		return (float)currentHealth / maxHealth;
+	}
+
 
 	[SerializeField]
 	private Behaviour[] disableOnDeath;
@@ -46,12 +52,15 @@ public class Player : NetworkBehaviour {
 
 		if (isDead)
 			return;
-		currentHealth -= _amount;
+		currentHealth = currentHealth - _amount;
 
 
 		Debug.Log (transform.name + " now has " + currentHealth + " health.");
-		if (currentHealth <= 0)
-			Die();
+		if (currentHealth <= 0) 
+		{
+			currentHealth = 0;
+			Die ();
+		}
 		if (currentHealth > maxHealth)
 			currentHealth = maxHealth;
 	}

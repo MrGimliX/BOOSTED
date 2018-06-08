@@ -3290,6 +3290,9 @@ MonoBehaviour:
   - {fileID: 81314282990359804}
   GraphicsToDisable: {fileID: 1062548742237426}
   remoteLayerName: RemotePlayer
+  playerUIPrefab: {fileID: 1143719774523834, guid: 8508cc9d5012f794f9e6040d5ff7b07f,
+    type: 2}
+  playerUIInstance: {fileID: 0}
 --- !u!114 &114198197381629882
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3388,6 +3391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96755bcc316d28b4fa2790d102d492ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WaitImeBetweenShots: 1
   cam: {fileID: 20800322176882536}
   mask:
     serializedVersion: 2
@@ -3422,7 +3426,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponHolder: {fileID: 4246599340211902}
   primaryWeapon:
-    name: Glock
+    name: Crossbow
     damage: 100
     range: 100
     firerate: 0

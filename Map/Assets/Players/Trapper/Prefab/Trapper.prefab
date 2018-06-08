@@ -2231,7 +2231,7 @@ Animator:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1016312702017320}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: 3af25a40cf7c1624db15bfe6bff4b448, type: 3}
   m_Controller: {fileID: 9100000, guid: 86eefd3f57fbe1c40bf4985cc4fa0547, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -2349,6 +2349,9 @@ MonoBehaviour:
   - {fileID: 20839022421512216}
   GraphicsToDisable: {fileID: 1564944096134730}
   remoteLayerName: RemotePlayer
+  playerUIPrefab: {fileID: 1143719774523834, guid: 8508cc9d5012f794f9e6040d5ff7b07f,
+    type: 2}
+  playerUIInstance: {fileID: 0}
 --- !u!114 &114111287634778590
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2559,6 +2562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96755bcc316d28b4fa2790d102d492ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WaitImeBetweenShots: 4
   cam: {fileID: 20839022421512216}
   mask:
     serializedVersion: 2
@@ -2576,13 +2580,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponHolder: {fileID: 4782255051180606}
   primaryWeapon:
-    name: Glock
+    name: ShotGun
     damage: 40
     range: 80
     firerate: 0
     maxBullets: 2
     bullets: 20
-    reloadTime: 15
+    reloadTime: 10
     graphics: {fileID: 1192463096858602}
   currentGraphics: {fileID: 114111287634778590}
   isReloading: 0
