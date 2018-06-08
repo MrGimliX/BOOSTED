@@ -74,7 +74,7 @@ public class PlayerShoot : NetworkBehaviour {
 	[Client]
 	void Shoot ()
 	{
-		if (!isLocalPlayer) {
+		if (!isLocalPlayer || weaponManager.isReloading) {
 			return;
 		}
 
@@ -82,6 +82,7 @@ public class PlayerShoot : NetworkBehaviour {
 
 		CmdOnShoot ();
 		RaycastHit _hit;
+		weaponManager.GetCurrentGraphics ().Fire.Play ();
 		if (Physics.Raycast (cam.transform.position, cam.transform.forward, out _hit, currentweapon.range, mask)) 
 		{
 			
@@ -91,6 +92,13 @@ public class PlayerShoot : NetworkBehaviour {
 				CmdPlayerShot (_hit.collider.name, currentweapon.damage);
 			}
 
+
+			if (currentweapon.bullets <= 0) {
+				weaponManager.Reload ();
+				weaponManager.GetCurrentGraphics ().Reload.Play ();
+				return;
+			}
+			currentweapon.bullets--;
 			CmdOnHit (_hit.point, _hit.normal);
 		}
 

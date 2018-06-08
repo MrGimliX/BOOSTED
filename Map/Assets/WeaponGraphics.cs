@@ -4,4 +4,6 @@ public class WeaponGraphics : MonoBehaviour   {
 
 	public ParticleSystem muzzleFlash;
 	public GameObject hitEffectPrefab;
+	public AudioSource Fire;
+	public AudioSource Reload;
 }

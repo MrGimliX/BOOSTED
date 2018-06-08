@@ -3395,7 +3395,7 @@ MonoBehaviour:
   m_OfflineScene: Lobby
   m_OnlineScene: 
   m_SpawnPrefabs:
-  - {fileID: 1929808805452446, guid: ddf4f9d1e227601449a32ee60863452e, type: 2}
+  - {fileID: 1862861646588950, guid: c05a40e7b74f06145a373ecfd0e6d2dd, type: 2}
   - {fileID: 1929808805452446, guid: ddf4f9d1e227601449a32ee60863452e, type: 2}
   - {fileID: 1929808805452446, guid: ddf4f9d1e227601449a32ee60863452e, type: 2}
   - {fileID: 1929808805452446, guid: ddf4f9d1e227601449a32ee60863452e, type: 2}
@@ -3460,14 +3460,14 @@ MonoBehaviour:
   m_MinPlayers: 2
   m_LobbyPlayerPrefab: {fileID: 11487034, guid: ad727d7e1462ecc4f83c898ecc501997,
     type: 2}
-  m_GamePlayerPrefab: {fileID: 1929808805452446, guid: ddf4f9d1e227601449a32ee60863452e,
+  m_GamePlayerPrefab: {fileID: 1862861646588950, guid: c05a40e7b74f06145a373ecfd0e6d2dd,
     type: 2}
   m_LobbyScene: Lobby
   m_PlayScene: MapScene
   lobbySlots: []
   prefabs:
-  - {fileID: 1929808805452446, guid: ddf4f9d1e227601449a32ee60863452e, type: 2}
-  - {fileID: 1929808805452446, guid: ddf4f9d1e227601449a32ee60863452e, type: 2}
+  - {fileID: 1862861646588950, guid: c05a40e7b74f06145a373ecfd0e6d2dd, type: 2}
+  - {fileID: 1862861646588950, guid: c05a40e7b74f06145a373ecfd0e6d2dd, type: 2}
   - {fileID: 1929808805452446, guid: ddf4f9d1e227601449a32ee60863452e, type: 2}
   - {fileID: 1929808805452446, guid: ddf4f9d1e227601449a32ee60863452e, type: 2}
   - {fileID: 1929808805452446, guid: ddf4f9d1e227601449a32ee60863452e, type: 2}
