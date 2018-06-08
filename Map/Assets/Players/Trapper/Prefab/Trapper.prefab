@@ -2347,6 +2347,7 @@ MonoBehaviour:
   - {fileID: 114376980197358238}
   - {fileID: 81725814290883978}
   - {fileID: 20839022421512216}
+  GraphicsToDisable: {fileID: 1564944096134730}
   remoteLayerName: RemotePlayer
 --- !u!114 &114111287634778590
 MonoBehaviour:
@@ -2453,6 +2454,8 @@ MonoBehaviour:
   - {fileID: 114975244470529244}
   - {fileID: 114841598718908844}
   - {fileID: 114376980197358238}
+  disableGameObjectOnDeath:
+  - {fileID: 1864501264770956}
 --- !u!114 &114735585715256834
 MonoBehaviour:
   m_ObjectHideFlags: 1

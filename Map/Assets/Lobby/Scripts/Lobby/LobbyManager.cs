@@ -424,8 +424,6 @@ namespace Prototype.NetworkLobby
 		{
 			int Len = prefabs.Count - 1;
 			int index = 0;
-			if (Len == 0)
-				throw new UnityException();
 			GameObject _temp = (GameObject)GameObject.Instantiate(prefabs[index]);
 			prefabs.RemoveAt (index);
 			return _temp;

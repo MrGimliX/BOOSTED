@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour {
+	
 	public GameManager instance;
 
 	void Awake()
 	{
 		if (instance != null) {
-		
+
 			Debug.Log ("More than one Game Manager in scene");
 		} 
 		else {
 			instance = this;
 		}
 	}
-
 	#region Player tracking
 	private const string PLAYER_ID_PREFIX = "Player";
 

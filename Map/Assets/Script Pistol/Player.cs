@@ -21,6 +21,10 @@ public class Player : NetworkBehaviour {
 
 	[SerializeField]
 	private Behaviour[] disableOnDeath;
+
+	[SerializeField]
+	private GameObject[] disableGameObjectOnDeath;
+
 	private bool[] wasEnabled;
 
 
@@ -48,6 +52,8 @@ public class Player : NetworkBehaviour {
 		Debug.Log (transform.name + " now has " + currentHealth + " health.");
 		if (currentHealth <= 0)
 			Die();
+		if (currentHealth > maxHealth)
+			currentHealth = maxHealth;
 	}
 
 	private void Die()
@@ -57,6 +63,11 @@ public class Player : NetworkBehaviour {
 		for (int i = 0; i < disableOnDeath.Length; i++) 
 		{
 			disableOnDeath [i].enabled = false;
+		}
+
+		for (int i = 0; i < disableGameObjectOnDeath.Length; i++) 
+		{
+			disableGameObjectOnDeath [i].SetActive( false);
 		}
 
 		Collider _col = GetComponent<Collider>();
@@ -77,6 +88,11 @@ public class Player : NetworkBehaviour {
 		for (int i = 0; i < disableOnDeath.Length; i++) 
 		{
 			disableOnDeath [i].enabled = wasEnabled [i];
+		}
+
+		for (int i = 0; i < disableGameObjectOnDeath.Length; i++) 
+		{
+			disableGameObjectOnDeath [i].SetActive(true);
 		}
 
 		Collider _col = GetComponent<Collider>();

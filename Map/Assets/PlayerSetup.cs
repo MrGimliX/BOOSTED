@@ -7,6 +7,9 @@ public class PlayerSetup : NetworkBehaviour {
 	Behaviour[] componentsToDisable;
 
 	[SerializeField]
+	public GameObject GraphicsToDisable;
+
+	[SerializeField]
 	string remoteLayerName = "RemotePlayer";
 
 
@@ -20,7 +23,11 @@ public class PlayerSetup : NetworkBehaviour {
 		}
 		else
 		{
-			
+			if (GraphicsToDisable != null) 
+			{
+				GraphicsToDisable.SetActive (false);
+			}
+
 			sceneCamera = Camera.main;
 			if (sceneCamera != null)
 			{

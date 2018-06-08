@@ -6774,6 +6774,7 @@ MonoBehaviour:
     reloadTime: 1
     graphics: {fileID: 1923696581444780, guid: 7780f9af82b4df94893e8e93b536b850, type: 2}
   currentGraphics: {fileID: 114014766438337820}
+  isReloading: 0
 --- !u!114 &114346051510291054
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6842,6 +6843,7 @@ MonoBehaviour:
   - {fileID: 114378826467584936}
   - {fileID: 20065845979145580}
   - {fileID: 81640336594661734}
+  GraphicsToDisable: {fileID: 1722673328081130}
   remoteLayerName: RemotePlayer
 --- !u!114 &114461068187113012
 MonoBehaviour:
@@ -6891,6 +6893,8 @@ MonoBehaviour:
   - {fileID: 114124514125183304}
   - {fileID: 114378826467584936}
   - {fileID: 114256241414258810}
+  disableGameObjectOnDeath:
+  - {fileID: 1010026084259174}
 --- !u!114 &114814974028434844
 MonoBehaviour:
   m_ObjectHideFlags: 1

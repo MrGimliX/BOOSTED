@@ -1926,7 +1926,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1500954739704160}
-  m_LocalRotation: {x: 0.46561283, y: 0.28414539, z: 0.31526113, w: 0.7765799}
+  m_LocalRotation: {x: 0.4656129, y: 0.2841454, z: 0.31526116, w: 0.77658004}
   m_LocalPosition: {x: -7.590279e-10, y: 0.0018111039, z: -3.7252902e-11}
   m_LocalScale: {x: 1, y: 0.99999994, z: 0.99999994}
   m_Children:
@@ -2474,6 +2474,8 @@ MonoBehaviour:
   - {fileID: 114702824309121544}
   - {fileID: 114953443055182848}
   - {fileID: 114426528093975058}
+  disableGameObjectOnDeath:
+  - {fileID: 1844812923000178}
 --- !u!114 &114235618653178548
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2490,6 +2492,7 @@ MonoBehaviour:
   - {fileID: 114426528093975058}
   - {fileID: 20648191608549908}
   - {fileID: 81377901759932544}
+  GraphicsToDisable: {fileID: 0}
   remoteLayerName: RemotePlayer
 --- !u!114 &114395556376083774
 MonoBehaviour:
