@@ -58,6 +58,9 @@
      <Compile Include="Assets\equalscript.cs" />
      <Compile Include="Assets\FlickeringLight.cs" />
      <Compile Include="Assets\GameVariables.cs" />
+     <Compile Include="Assets\GameWinning\GameEndTrigger.cs" />
+     <Compile Include="Assets\GameWinning\GameWinningManager.cs" />
+     <Compile Include="Assets\GameWinning\LevelComplete.cs" />
      <Compile Include="Assets\HostGame.cs" />
      <Compile Include="Assets\JoinGame.cs" />
      <Compile Include="Assets\KeyItem.cs" />
