@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerShoot : NetworkBehaviour {
 
 	private const string PLAYER_TAG = "Player";
+	private const string MONSTER_TAG = "Monster";
 
 
 	private PlayerWeapon currentweapon;
@@ -86,7 +87,7 @@ public class PlayerShoot : NetworkBehaviour {
 		if (Physics.Raycast (cam.transform.position, cam.transform.forward, out _hit, currentweapon.range, mask)) 
 		{
 			
-			if (_hit.collider.tag == PLAYER_TAG) 
+			if ((_hit.collider.tag == PLAYER_TAG || _hit.collider.tag == MONSTER_TAG) && this.tag != _hit.collider.tag) 
 			{
 				
 				CmdPlayerShot (_hit.collider.name, currentweapon.damage);

@@ -2429,7 +2429,7 @@ MonoBehaviour:
     firerate: 0
     maxBullets: 20
     bullets: 20
-    reloadTime: 15
+    reloadTime: 10
     graphics: {fileID: 1373105954891028}
   currentGraphics: {fileID: 114950574737191862}
   isReloading: 0
