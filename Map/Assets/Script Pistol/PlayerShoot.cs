@@ -105,6 +105,10 @@ public class PlayerShoot : NetworkBehaviour {
 				
 				CmdPlayerShot (_hit.collider.name, currentweapon.damage);
 			}
+			if (currentweapon.damage < 0 && _hit.collider.tag == PLAYER_TAG) {
+			
+				CmdPlayerShot (_hit.collider.name, currentweapon.damage);
+			}
 
 
 

@@ -33,7 +33,7 @@ public class GameWinningManager : MonoBehaviour {
 		if (GameVariables.allplayers == GameVariables.playersdead && GameVariables.allplayers != 0 && GameVariables.playersdead != 0)
 			WinGameMonster ();
 			return;
-		if (GameVariables.MonsterDead) {
+		if (GameVariables.MonsterDead == true) {
 			WinGameHunterMonsterKilled ();
 		}
 	}
