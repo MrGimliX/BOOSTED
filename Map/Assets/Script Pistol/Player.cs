@@ -79,11 +79,10 @@ public class Player : NetworkBehaviour {
 			disableGameObjectOnDeath [i].SetActive( false);
 		}
 
-		Collider _col = GetComponent<Collider>();
-		if (_col != null) {
-			_col.enabled = false;
-		}
-
+		if (this.transform.tag == "Player")
+			GameVariables.playersdead++;
+		if (this.transform.tag == "Monster")
+			GameVariables.MonsterDead = true;
 		// DISABLE COMPONENTS
 
 		Debug.Log (transform.name + "is dead!");

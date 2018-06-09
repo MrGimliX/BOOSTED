@@ -9,5 +9,6 @@ public class LevelComplete : MonoBehaviour {
 	public void LoadNextLevel()
 	{
 		SceneManager.LoadScene("Lobby");
+		Destroy(GameObject.Find("LobbyManager"));
 	}
 }

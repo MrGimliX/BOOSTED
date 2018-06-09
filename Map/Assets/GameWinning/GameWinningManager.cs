@@ -8,27 +8,33 @@ public class GameWinningManager : MonoBehaviour {
 
 	public GameObject CompleteLevelUI;
 
+	public GameObject MonsterKilled;
+
+	public GameObject MonsterWin;
 
 	public void WinGameHuntersEscape()
 	{
 		CompleteLevelUI.SetActive(true);
 	}
-	/*bool GameEnded = false;
 
-	public float RestartDelay = 3f;
 
-	public void EndGame()
+	public void WinGameHunterMonsterKilled()
 	{
-		if (GameEnded == false)
-		{
-			GameEnded = true;
-			Debug.Log("Hunters Win")
-			Invoke("Restart", RestartDelay)
-		}
+		MonsterKilled.SetActive (true);
 	}
 
-	void Restart()
+	public void WinGameMonster()
 	{
-		SceneManager.LoadScene("Lobby")
-	}*/
+		MonsterWin.SetActive (true);
+	}
+
+	void Update ()
+	{
+		if (GameVariables.allplayers == GameVariables.playersdead && GameVariables.allplayers != 0 && GameVariables.playersdead != 0)
+			WinGameMonster ();
+			return;
+		if (GameVariables.MonsterDead) {
+			WinGameHunterMonsterKilled ();
+		}
+	}
 }
