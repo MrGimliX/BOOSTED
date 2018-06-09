@@ -87,8 +87,10 @@ public class PlayerShoot : NetworkBehaviour {
 		}
 
 		if (currentweapon.bullets <= 0) {
+			
 			weaponManager.Reload ();
-			weaponManager.GetCurrentGraphics ().Reload.Play ();
+			if(this.tag != MONSTER_TAG)
+				weaponManager.GetCurrentGraphics ().Reload.Play ();
 			return;
 		}
 
@@ -97,15 +99,18 @@ public class PlayerShoot : NetworkBehaviour {
 
 		CmdOnShoot ();
 		RaycastHit _hit;
-		weaponManager.GetCurrentGraphics ().Fire.Play ();
+		if(this.tag != MONSTER_TAG)
+			weaponManager.GetCurrentGraphics ().Fire.Play ();
 		if (Physics.Raycast (cam.transform.position, cam.transform.forward, out _hit, currentweapon.range, mask)) 
 		{
 			
-			if ((_hit.collider.tag == PLAYER_TAG || _hit.collider.tag == MONSTER_TAG) && this.tag != _hit.collider.tag) 
-			{
+			if ((_hit.collider.tag == PLAYER_TAG || _hit.collider.tag == MONSTER_TAG) && this.tag != _hit.collider.tag) {
 				
 				CmdPlayerShot (_hit.collider.name, currentweapon.damage);
-			}
+				if (this.tag == MONSTER_TAG)
+					weaponManager.GetCurrentGraphics ().Fire.Play ();
+			} 
+
 			if (currentweapon.damage < 0 && _hit.collider.tag == PLAYER_TAG) {
 			
 				CmdPlayerShot (_hit.collider.name, currentweapon.damage);
@@ -117,9 +122,15 @@ public class PlayerShoot : NetworkBehaviour {
 
 
 		}
+	else {
+		
+			if (this.tag == MONSTER_TAG)
+				weaponManager.GetCurrentGraphics ().Reload.Play ();
+	}
 		if (currentweapon.bullets <= 0) {
 			weaponManager.Reload ();
-			weaponManager.GetCurrentGraphics ().Reload.Play ();
+			if(this.tag != MONSTER_TAG)
+				weaponManager.GetCurrentGraphics ().Reload.Play ();
 			return;
 		}
 

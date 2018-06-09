@@ -52,6 +52,11 @@ public class PlayerSetup : NetworkBehaviour {
 		GetComponent<Player> ().Setup ();
 	}
 
+	public Camera GetCamera
+	{
+		get{return sceneCamera;}
+	}
+
 	public override void OnStartClient()
 	{
 		base.OnStartClient();

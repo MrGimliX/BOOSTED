@@ -12,6 +12,10 @@ public class Player : NetworkBehaviour {
 		protected set { _isdead = value;}
 	}
 
+	public AudioSource DiePlayer;
+
+	Camera sceneCamera;
+
 	[SerializeField]
 	private int maxHealth = 100;
 
@@ -68,21 +72,28 @@ public class Player : NetworkBehaviour {
 	private void Die()
 	{
 		isDead = true;
-
-		for (int i = 0; i < disableOnDeath.Length; i++) 
+		sceneCamera = GetComponent<PlayerSetup> ().GetCamera;
+		if (this.transform.tag == "Player")
 		{
+			GameVariables.playersdead++;
+			DiePlayer.Play ();
+		}
+		if (this.transform.tag == "Monster") {
+			GameVariables.MonsterDead = true;
+		}
+		for (int i = 0; i < disableOnDeath.Length; i++) {
 			disableOnDeath [i].enabled = false;
 		}
 
-		for (int i = 0; i < disableGameObjectOnDeath.Length; i++) 
-		{
-			disableGameObjectOnDeath [i].SetActive( false);
+		for (int i = 0; i < disableGameObjectOnDeath.Length; i++) {
+			disableGameObjectOnDeath [i].SetActive (false);
 		}
+		sceneCamera.gameObject.SetActive (true);
 
-		if (this.transform.tag == "Player")
-			GameVariables.playersdead++;
-		if (this.transform.tag == "Monster")
-			GameVariables.MonsterDead = true;
+		Collider _col = GetComponent<Collider>();
+		if (_col != null)
+			_col.enabled = false;
+			
 		// DISABLE COMPONENTS
 
 		Debug.Log (transform.name + "is dead!");
