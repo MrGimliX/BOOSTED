@@ -7,12 +7,16 @@ public class PlayerShoot : NetworkBehaviour {
 
 	private const string PLAYER_TAG = "Player";
 	private const string MONSTER_TAG = "Monster";
-	public float WaitImeBetweenShots = 1f;
+	public float WaitTimeBetweenShots = 1f;
 
 	private PlayerWeapon currentweapon;
 
 	[SerializeField]
 	private Camera cam;
+
+	private float nextTimeToFire = 0f;
+
+	public float fireRate = 2f;
 
 	[SerializeField]
 	private LayerMask mask;
@@ -37,8 +41,8 @@ public class PlayerShoot : NetworkBehaviour {
 		if (currentweapon.firerate <= 0f) {
 			
 		
-			if (Input.GetButtonDown ("Fire1")) {
-			
+			if (Input.GetButtonDown ("Fire1") && Time.time >= nextTimeToFire) {
+				nextTimeToFire = Time.time + 1f / fireRate;
 				Shoot ();
 				StartCoroutine (Coroutine_WaitShots ());
 			}
@@ -127,7 +131,7 @@ public class PlayerShoot : NetworkBehaviour {
 
 	private IEnumerator Coroutine_WaitShots()
 	{
-		yield return new WaitForSeconds (WaitImeBetweenShots);
+		yield return new WaitForSeconds (WaitTimeBetweenShots);
 	}
 
 }

@@ -62,4 +62,10 @@ public class PlayerController : MonoBehaviour {
 		this.transform.position = spawnPoints[spawnpointIndex].position;
 	}
 
+	public float GetSpeed
+	{
+		get{return speed;}
+		set{ speed = value; }
+	}
+
 }
