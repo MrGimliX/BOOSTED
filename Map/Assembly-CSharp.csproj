@@ -64,6 +64,7 @@
      <Compile Include="Assets\HostGame.cs" />
      <Compile Include="Assets\JoinGame.cs" />
      <Compile Include="Assets\KeyItem.cs" />
+     <Compile Include="Assets\laserScript.cs" />
      <Compile Include="Assets\Lobby\Scripts\DraggablePanel.cs" />
      <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyCountdownPanel.cs" />
      <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyHook.cs" />

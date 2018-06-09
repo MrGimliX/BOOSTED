@@ -2969,7 +2969,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1b766da7cc2d648aa84e36cb5fe8abcb, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a82818d03402b0e4f8c55509791b617a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -3049,7 +3049,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8871a6ad13fadda4884fac3930b3d2d0, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 38a44e9bb947c8746aa31e4c3c23829f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.7
   m_Pitch: 1
@@ -3391,8 +3391,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96755bcc316d28b4fa2790d102d492ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WaitImeBetweenShots: 1
+  WaitTimeBetweenShots: 1
   cam: {fileID: 20800322176882536}
+  fireRate: 2
   mask:
     serializedVersion: 2
     m_Bits: 4294967039

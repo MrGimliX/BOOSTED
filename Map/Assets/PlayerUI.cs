@@ -11,6 +11,12 @@ public class PlayerUI : MonoBehaviour {
 	[SerializeField]
 	Text ammoText;
 
+	[SerializeField]
+	Text KeysText;
+
+	[SerializeField]
+	Image KeysImage;
+
 	private Player player;
 
 	private WeaponManager weaponManager;
@@ -30,10 +36,22 @@ public class PlayerUI : MonoBehaviour {
 	{
 		SetHealthAmount (player.GetHealthPct());
 		SetAmmoAmount (weaponManager.GetCurrentWeapon().bullets);
+		SetKey (GameVariables.keycount);
 	}
 
 	void SetAmmoAmount (int _amount)
 	{
 		ammoText.text = _amount.ToString ();
+	}
+
+	public void SetKey(int keycount)
+	{
+		if (keycount == 5) 
+		{
+			KeysText.text = keycount.ToString ();
+			KeysImage.color = new Color (9, 255, 0, 203);
+		}
+		else
+			KeysText.text = keycount.ToString ();
 	}
 }

@@ -73,7 +73,8 @@ public class PlayerShoot : NetworkBehaviour {
 	[ClientRpc]
 	void RpcdohitEffect(Vector3 _pos, Vector3 _normal)
 	{
-		
+		if (weaponManager.GetCurrentGraphics ().hitEffectPrefab == null)
+			return;
 		GameObject _hitEffect = Instantiate (weaponManager.GetCurrentGraphics ().hitEffectPrefab, _pos, Quaternion.LookRotation (_normal));
 		Destroy (_hitEffect, 2f);
 	}

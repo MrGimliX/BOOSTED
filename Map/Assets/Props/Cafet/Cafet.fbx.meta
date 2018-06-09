@@ -1,0 +1,159 @@
+fileFormatVersion: 2
+guid: 3a46a6d352ab38848afcd02dbf4e809f
+timeCreated: 1528570213
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Clone Clone Mesh 63
+    100004: Clone Clone Mesh 68
+    100006: Clone Mesh 57
+    100008: Clone Mesh 60
+    100010: Clone Mesh 63
+    100012: Clone Mesh 73
+    100014: Clone Mesh 76
+    100016: Mesh 57
+    100018: Mesh 62
+    100020: Mesh 73
+    100022: Mesh 74
+    100024: Mesh 80
+    100026: Mesh 81
+    100028: Mesh 85
+    100030: Text
+    400000: //RootNode
+    400002: Clone Clone Mesh 63
+    400004: Clone Clone Mesh 68
+    400006: Clone Mesh 57
+    400008: Clone Mesh 60
+    400010: Clone Mesh 63
+    400012: Clone Mesh 73
+    400014: Clone Mesh 76
+    400016: Mesh 57
+    400018: Mesh 62
+    400020: Mesh 73
+    400022: Mesh 74
+    400024: Mesh 80
+    400026: Mesh 81
+    400028: Mesh 85
+    400030: Text
+    2300000: Clone Clone Mesh 63
+    2300002: Clone Clone Mesh 68
+    2300004: Clone Mesh 57
+    2300006: Clone Mesh 60
+    2300008: Clone Mesh 63
+    2300010: Clone Mesh 73
+    2300012: Clone Mesh 76
+    2300014: Mesh 57
+    2300016: Mesh 62
+    2300018: Mesh 73
+    2300020: Mesh 74
+    2300022: Mesh 80
+    2300024: Mesh 81
+    2300026: Mesh 85
+    2300028: Text
+    3300000: Clone Clone Mesh 63
+    3300002: Clone Clone Mesh 68
+    3300004: Clone Mesh 57
+    3300006: Clone Mesh 60
+    3300008: Clone Mesh 63
+    3300010: Clone Mesh 73
+    3300012: Clone Mesh 76
+    3300014: Mesh 57
+    3300016: Mesh 62
+    3300018: Mesh 73
+    3300020: Mesh 74
+    3300022: Mesh 80
+    3300024: Mesh 81
+    3300026: Mesh 85
+    3300028: Text
+    4300000: Text
+    4300002: Mesh 57
+    4300004: Clone Clone Mesh 68
+    4300006: Clone Mesh 63
+    4300008: Clone Mesh 60
+    4300010: Mesh 81
+    4300012: Mesh 85
+    4300014: Clone Mesh 57
+    4300016: Clone Mesh 76
+    4300018: Mesh 62
+    4300020: Mesh 80
+    4300022: Mesh 73
+    4300024: Clone Mesh 73
+    4300026: Mesh 74
+    4300028: Clone Clone Mesh 63
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

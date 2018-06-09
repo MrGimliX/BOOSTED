@@ -346,6 +346,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1349537570406706
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4543832599522358}
+  - component: {fileID: 198976159110710890}
+  - component: {fileID: 199743984841372718}
+  m_Layer: 8
+  m_Name: Particle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1350983020331370
 GameObject:
   m_ObjectHideFlags: 1
@@ -387,23 +404,6 @@ GameObject:
   m_Layer: 8
   m_Name: Nurse_gun
   m_TagString: Player
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1377661570462308
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4644018071237524}
-  - component: {fileID: 198700566299004182}
-  - component: {fileID: 199109867493477250}
-  m_Layer: 8
-  m_Name: Particle
-  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1511,6 +1511,19 @@ Transform:
   m_Father: {fileID: 4971880494646752}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4543832599522358
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1349537570406706}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10.483553, y: 1.5538911, z: 2.3672562}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4605901827928116}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4547180001423896
 Transform:
   m_ObjectHideFlags: 1
@@ -1610,7 +1623,7 @@ Transform:
   m_LocalPosition: {x: -2.889, y: 0.549, z: -0.011}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
-  - {fileID: 4644018071237524}
+  - {fileID: 4543832599522358}
   - {fileID: 4836585653846518}
   - {fileID: 4329885386638266}
   - {fileID: 4676490837194024}
@@ -1642,19 +1655,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4547180001423896}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4644018071237524
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1377661570462308}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4605901827928116}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4655983316711998
 Transform:
@@ -1867,7 +1867,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1862861646588950}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.02593264, y: 1.8, z: -0.82}
+  m_LocalPosition: {x: -0.02593264, y: 1.8, z: -3.82}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4399053985126046}
@@ -2059,9 +2059,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8871a6ad13fadda4884fac3930b3d2d0, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 246b9f161082ef549b6b649c75a407ef, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.7
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2139,9 +2139,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1b766da7cc2d648aa84e36cb5fe8abcb, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 94dcfe6de0726f7458650c25349b15c2, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2359,8 +2359,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96755bcc316d28b4fa2790d102d492ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WaitImeBetweenShots: 1
+  WaitTimeBetweenShots: 1
   cam: {fileID: 20285901529672254}
+  fireRate: 1
   mask:
     serializedVersion: 2
     m_Bits: 4294967039
@@ -2434,7 +2435,7 @@ MonoBehaviour:
     firerate: 0
     maxBullets: 2
     bullets: 20
-    reloadTime: 8
+    reloadTime: 4
     graphics: {fileID: 1373105954891028}
   currentGraphics: {fileID: 114950574737191862}
   isReloading: 0
@@ -2552,7 +2553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7edae0423403a458d387bc059679aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  muzzleFlash: {fileID: 198700566299004182}
+  muzzleFlash: {fileID: 198976159110710890}
   hitEffectPrefab: {fileID: 1251893516590286, guid: eec08fac782c7a74384127cf5eb82bb5,
     type: 2}
   Fire: {fileID: 82888207271714998}
@@ -2976,12 +2977,12 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0000025960035, y: -0.007710852, z: 0.0015655481}
     m_Extent: {x: 0.0013156612, y: 0.0010937531, z: 0.0012538747}
   m_DirtyAABB: 0
---- !u!198 &198700566299004182
+--- !u!198 &198976159110710890
 ParticleSystem:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1377661570462308}
+  m_GameObject: {fileID: 1349537570406706}
   serializedVersion: 5
   lengthInSec: 0.2
   simulationSpeed: 1
@@ -3035,7 +3036,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1908044731
+  randomSeed: 180054835
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -5471,7 +5472,7 @@ ParticleSystem:
   LightsModule:
     enabled: 1
     ratio: 1
-    light: {fileID: 108142285989582206}
+    light: {fileID: 0}
     randomDistribution: 1
     color: 0
     range: 0
@@ -6238,13 +6239,13 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
---- !u!199 &199109867493477250
+--- !u!199 &199743984841372718
 ParticleSystemRenderer:
   serializedVersion: 4
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1377661570462308}
+  m_GameObject: {fileID: 1349537570406706}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
