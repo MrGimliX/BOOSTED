@@ -5,8 +5,12 @@ using UnityEngine;
 public class GameEndTrigger : MonoBehaviour {
 
 	public GameWinningManager gameManager;
-	void OnTriggerEnter()
+	void OnTriggerEnter(Collider collider)
 	{
-		gameManager.WinGameHuntersEscape();
+		if(collider.tag == "Player" && GameVariables.keycount == 5)
+		{
+			gameManager.WinGameHuntersEscape();
+
+		}
 	}
 }
